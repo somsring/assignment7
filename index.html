@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+<title>Assignment07</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+a{text-decoration: none
+}
+</style>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Right Column -->
+    <div class="w3-full">
+        
+       
+        <div class="w3-container w3-card w3-white w3-margin-bottom" >
+        	<div class="w3-container w3-card w3-white w3-margin-bottom" id="logoBackground" >
+        		<p class="logoBackground">
+          		<img class="logo" src="uoc.jpg" >
+          		</p>
+          	</div>
+          	<div class="w3-container w3-card w3-white w3-margin-bottom" id="logoBackground" >
+        		<p>
+          		<a href="#"><button><b>Assignment 7</b></button></a>
+              
+              <a href="result.html"><button><b>Work Report</b></button></a>
+          		</p>
+          	</div>
+        	<div class="w3-container">
+
+         	
+        	</div>
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+          	<p>
+          		<center>
+          			<h3><b>UNIVERSITY OF CRETE </b></h3>
+          			<h3><b>DEPARTMENT OF COMPUTER SCIENCE</b></h3>
+          			<h4><b>Multimedia Technology </b></h4>
+          			<h5><b>Spring 2018</b></h5><br/><br/>
+          			<h6><b>7th Assignment</b></h6>
+          		</center>
+          		<p class="para">&nbsp;&nbsp;&nbsp;&nbsp;The objective is to segment audio signals and then to discriminate the resulting segments in speech and music. The only feature to be used for achieving these tasks is the signal amplitude. Speciﬁcally, the average amplitude will be computed in non-overlapping frames of 20 msec.
+              <br><br> Initially, the power values of signal x will be smoothed using a linear system implemented using Matlab function<br><br>filtfilt(b, [1 -b], x.^2)<br><br>
+              with b = 0.05. Then the instantaneous amplitude is estimated by taking the square root of the smoothed signal power and the average amplitude in each frame is calculated. It is requested to plot the average amplitude versus time in sec. The average amplitude is also smoothed with the above ﬁlter, and the values {A(n),n = 1,...,NB} are obtained, where NB is the number of frames. The unsigned diﬀerences D(n) = |A(n + 1)−A(n−1)| are then calculated. Plot D(n) versus time in sec. Identify important diﬀerences in average amplitude by ﬁnding the maxima of the diﬀerence D(n) that are more than twice the mean diﬀerence and are at least distanced 0.5 sec. In this way the audio signal is segmented. The maxima instants, where the diﬀerence is important, are possibly changes from voice to music or vice versa. 
+              <br/><br>
+              In order to classify the segments resulting from the detection of the diﬀerence maxima, the mean value and the standard deviation for the average amplitude will be measured for each segment. The decision is based on the ratio of the mean value to the standard deviation. If the ratio is less than 2.25, it is decided that it is a voice signal, otherwise it is a music signal. Discriminate the whole music and voice segments, and obtain their description with the ratio of the mean value to the standard deviation of the average amplitude and with the same ratio for the average zero-crossing rate calculated on the same frames. The average zero-crossing ratio is given by
+
+              <br/><br>
+            <img src="formula.jpg">
+          		<br><br>
+              Results should be given for signal TestSegment.wav. The work report, the results and the conclusions should be given in HTML.
+
+          		<br><br>
+              Useful Matlab functions : audioread, ﬁltﬁlt, ﬁndpeaks, mean, std.
+              <br><br>
+          		
+          	</p>
+
+        </div>
+      </div>
+        
+        
+     
+    <!-- End Right Column -->
+    	</div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top" >
+  <p>Find me on social media.</p>
+  <p>
+  <i class="fa fa-facebook-official w3-hover-opacity">&nbsp;Sonam Tshering</i>&nbsp;
+  <i class="fa fa-instagram w3-hover-opacity">&nbsp;sonam_victrious</i>&nbsp;
+  <i class="fa fa-twitter w3-hover-opacity">&nbsp;sonamts31046832</i>
+  </p>
+  
+</footer>
+
+</body>
+</html>
+
+
+<!--
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom" >
+        <div class="w3-container">
+          <h3 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>2. System features </h3>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>xxxx</b></h5>
+        
+          <p>xxxxxx</p><hr>
+        </div>
+      </div>
+
+        -->

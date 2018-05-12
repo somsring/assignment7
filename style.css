@@ -1,0 +1,29 @@
+.logo{
+	position: relative;
+	margin-top: ;
+}
+
+.logoBackground{
+	background-color: hsl(282, 39%, 95%);
+}
+button{
+	height: 50px;
+	width:49%;
+	border-color: white;
+	border:1;
+	background-color: hsl(282, 39%, 95%);
+}
+.para{
+	padding: 50px;
+}
+.para2{
+	padding: 30px;
+}
+.gallery{
+	height: 256px;
+	width: 256px;
+}
+.galleryb{
+	height: 400px;
+	width: 400px;
+}
